@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	
+
 	<title>JSPlumb</title>
 
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -20,8 +20,8 @@
     	//los nodos en común
         var common = {
             connector: ["Straight"], //Una linea recta entre nodo y nodo
-            anchor: ["Left", "Right"],
-            //La forma en que tienen los puntos de conexión al rededor de los nodos, 
+            anchor: ["Left", "Right"], //Sentido de las conexiones. De izquierda a derecha.
+            //La forma que tienen los puntos de conexión al rededor de los nodos, 
             //puede ser un cuadrado, un ciruclo o una imágen.
             endpoint:"Dot", 
             //Estilos de las linea de conexión
@@ -38,8 +38,8 @@
         // Estilo para la linea de conexión que salta a la siguiente
         // linea de nodos
         var common2 = {
-            connector: ["Flowchart"],
-            endpoint:"Dot",
+            connector: ["Flowchart"], //Conector en forma de cañería
+            endpoint:"Dot",//Los puntos de conexión de los nodos tienen forma de punto
             paintStyle:{ strokeStyle:"#007486", lineWidth:3 },
             endpointStyle:{ fillStyle:"#007486" }, 
             overlays:[ 
